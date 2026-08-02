@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of toutapp.com (2026-07-21)
+notes: >-
+  ToutApp is defunct as a standalone product. toutapp.com and www.toutapp.com
+  both 301-redirect to https://www.marketo.com/software/marketo-sales-connect/
+  (which itself 301s to https://business.adobe.com/products/marketo/sales-connect.html)
+  following Marketo's 2017 acquisition of ToutApp. No well-known discovery
+  documents are served on the toutapp.com host; every probe below returned 404.
+hosts:
+- host: https://toutapp.com
+  redirect: https://www.marketo.com/software/marketo-sales-connect/
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404

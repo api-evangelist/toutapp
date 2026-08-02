@@ -1,7 +1,26 @@
 aid: toutapp
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/toutapp.png
 name: ToutApp
-description: ToutApp is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ToutApp was a sales-engagement platform founded in 2011 by Tawheed Kader that
+  gave sales teams email templates, email tracking, campaigns, and analytics for
+  outbound selling, backed by Andreessen Horowitz. Marketo acquired ToutApp in
+  May 2017 and folded the product into Marketo Sales Connect (later part of
+  Adobe after Adobe acquired Marketo in 2018). The company is defunct as a
+  standalone business - toutapp.com now redirects to Adobe's Marketo Sales
+  Connect page - and no independent ToutApp API or developer surface remains
+  publicly available.
 url: https://raw.githubusercontent.com/api-evangelist/toutapp/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +28,36 @@ x-backed-by:
 - a16z
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: marketo
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Sales
+- Sales Engagement
+- Email Tracking
+- Email Templates
+- Marketing
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/toutapp-domain-security.yml
+- type: Website
+  url: https://www.toutapp.com
+- type: WellKnown
+  url: well-known/toutapp-well-known.yml
+- type: LLMsTxt
+  url: llms/toutapp-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
